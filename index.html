@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Story by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+        <div id="wrapper" class="divided">
+            <section class="banner style1 orient-right content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+                <div class="content">
+                    <h1>MailShield</h1>
+                    <p class="major">Privacidade de e-mail sob seu domínio!</p>
+                    <ul class="actions special">
+                        <li><a href="#info" class="button wide smooth-scroll-middle">Saiba Mais</a></li>
+                        <li><a href="#help" class="button wide smooth-scroll-middle">Ajuda</a></li>
+		    </ul>
+                </div>
+		<div class="image">
+                    <img src="images/logo.jpg" alt="" />
+                </div>
+            </section>
+            <section class="spotlight style1 orient-left content-align-left image-position-left onscroll-image-fade-in" id="info">
+                <div class="content">
+                    <h2>MailShield</h2>
+                    <h4>A privacidade é um direito seu. Tenha controle sobre seus dados.</h4>
+                    <p>O serviço MailShield é capaz de <b>esconder seu endereço de e-mail</b>, permitindo o uso de um endereço específico para cada loja, serviço ou local em que for necessário informar seu endereço eletrônico.</p>
+                    <p>O serviço funciona recebendo todas as mensagens <i>@seudominio.com</i> e <b>encaminhando-as ao seu endereço de e-mail pessoal</b>, seja ele GMail, Hotmail ou qualquer outro. Tais mensagens serão marcadas, no campo de destinatário, com o texto que você escolheu, permitindo assim saber de antemão como aquela empresa ou pessoa obteve seu e-mail.</p>
+                    <p>Caso algum endereço <i>@semdominio.com</i> esteja recebendo muitas mensagens, basta bloquear o e-mail no bot, acabando com o problema.</p>
+                </div>
+            </section>
+            <section class="spotlight style1 orient-right content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+                <div class="content">
+                    <img src="images/example.png" alt="" />
+                </div>
+            </section>
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="help">
+                <div class="content">
+                    <h2>Ajuda</h2>
+                    <p>Fale com o bot usando o link: <a href="https://t.me/MailShielBot">https://t.me/MailShieldBot</a>.</p>
+                    <p>A assinatura é feita via PicPay e a <b>cobrança mensal é automática</b> e pode ser <b>cancelada a qualquer momento</b>.</p>
+                    <p>Para que o bot funcione, é necessário configurar o registro MX <code>@ MX 10 mx.mailshield.xyz</code> no DNS. Para mais informações, <a href="#mx" class="smooth-scroll-middle">clique aqui</a>.
+                    <p>Para comprar seu domínio, recomendo os sites <a href="https://registro.br">Registro.Br</a> ou <a href="https://namecheap.com">NameCheap.com</a>, sendo o primeiro indicado para domínios que terminem em <i>.br</i> e o segundo para todos os outros.</p>
+                    <ul class="actions special">
+                        <li><a href="#mx" class="button wide smooth-scroll-middle">Registro MX</a></li>
+                        <li><a href="#txt" class="button wide smooth-scroll-middle">Registro TXT</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="mx">
+                <div class="content">
+                    <h2>Registro MX</h2>
+                    <p>O registro de tipo MX é responsável por indicar o servidor que recebe os e-mails do domínio. A correta configuração é essencial para o funcionamento do serviço e do bot MailShield.</p>
+                    <p><code>@ MX 10 mx.mailshield.xyz</code></p>
+                    <ul>
+                        <li><code>@</code> indica ser a raíz do domínio. Em alguns sistemas o valor pode ser em branco.</li>
+                        <li><code>MX</code> tipo do registro.</li>
+                        <li><code>10</code> prioridade do servidor.</li>
+                        <li><code>mx.mailshield.xyz</code> é o servidor responsável pelos e-mails.</li>
+                    </ul>
+                    <ul class="actions special">
+                        <li><a href="#namecheap" class="button wide smooth-scroll-middle">Instruções Namecheap</a></li>
+                        <li><a href="#registrobr" class="button wide smooth-scroll-middle">Instruções Registro.BR</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="txt">
+                <div class="content">
+                    <h2>Registro TXT</h2>
+                    <p>O registro de tipo TXT é útil para que o e-mail <b>não entre como SPAM</b> em sua caixa. Não é obrigatório, mas é recomendado.</p>
+                    <p><code>@ TXT "v=spf1 include:mx.mailshield.xyz ~all"</code></p>
+                    <ul>
+                        <li><code>@</code> indica ser a raíz do domínio. Em alguns sistemas o valor pode ser em branco.</li>
+                        <li><code>TXT</code> tipo do registro.</li>
+                        <li><code>v=spf1 include:mx.mailshield.xyz ~all</code> texto do registro.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="namecheap">
+                <div class="content">
+                    <h2>NameCheap</h2>
+                    <h3>Passo 1:</h3>
+                    <p>Acesse sua conta e clique em <i>Domain List</i>. Em seguida, clique em <i>Manage</i> para gerenciar o domínio.</p>
+                    <h3>Passo 2:</h3>
+                    <p>Clique em <i>Advanced DNS</i>.</p>
+                    <h3>Passo 3:</h3>
+                    <p>Procure <i>Mail Settings</i> e selecione <i>Custom MX</i>. Preencha os campos <i>Host</i> <code>@</code> e <i>value</i> <code>mx.mailshield.xyz</code> com prioridade <code>10</code>.</p>
+                    <h3>Passo 4 (recomendado):</h3>
+                    <p>Na seção <i>Host Records</i> adicione um registro de tipo <i>TXT Record</i>, <i>Host</i><code>@</code> e <i>Value</i><code>v=spf1 include:mx.mailshield.xyz ~all</code>.</p>
+                    <h3><b>Clique nas imagens para ampliá-las.</b></h3>
+                </div>
+            </section>
+            <section class="onscroll-image-fade-in">
+                <div class="gallery style1 lightbox small onscroll-fade-in onscroll-image-fade-in">
+                    <article>
+                        <a href="images/namecheap_step0.png" class="image">
+                            <img src="images/namecheap_step0_thumb.png" alt="Namecheap - Passo 1">
+                        </a>
+                        <div class="caption"><h3>Passo 1</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/namecheap_step1.png" class="image">
+                            <img src="images/namecheap_step1_thumb.png" alt="Namecheap - Passo 1">
+                        </a>
+                        <div class="caption"><h3>Passo 2</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/namecheap_step2.png" class="image">
+                            <img src="images/namecheap_step2_thumb.png" alt="Namecheap - Passo 2">
+                        </a>
+                        <div class="caption"><h3>Passo 3</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/namecheap_step4.png" class="image">
+                            <img src="images/namecheap_step4_thumb.png" alt="Namecheap - Passo 2">
+                        </a>
+                        <div class="caption"><h3>Passo 4</h3></div>
+		    </article>
+		</div>
+            </section>
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="registrobr">
+                <div class="content">
+                    <h2>RegistroBR</h2>
+                    <h3>Passo 1:</h3>
+                    <p>Acesse sua conta e clique em <i>Domínios</i>. Em seguida, clique no seu domínio.</p>
+                    <h3>Passo 2:</h3>
+                    <p>Procure a seção <i>DNS</i> e clique em <i>Editar Zona</i>.</p>
+                    <h3>Passo 3:</h3>
+                    <p>Procure <i>Nome do Servidor de E-mail</i> e preencha com <code>mx.mailshield.xyz</code>.
+                    <h3>Passo 4 (recomendado):</h3>
+                    <p>Alterando para o <i>Modo Avançado</i>, clique em <i>Nova Entrada</i> e adicione um registro de tipo <code>TXT</code> e conteúdo <code>v=spf1 include:mx.mailshield.xyz ~all</code>, <b>deixando o primeiro campo em branco</b>.</p>
+                    <h3><b>Clique nas imagens para ampliá-las.</b></h3>
+                </div>
+            </section>
+            <section class="onscroll-image-fade-in">
+                <div class="gallery style1 lightbox small onscroll-fade-in onscroll-image-fade-in">
+                    <article>
+                        <a href="images/registrobr_step0.png" class="image">
+                        <img src="images/registrobr_step0_thumb.png" alt="Namecheap - Passo 1">
+                        </a>
+                        <div class="caption"><h3>Passo 1</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/registrobr_step1.png" class="image">
+                            <img src="images/registrobr_step1_thumb.png" alt="Namecheap - Passo 1">
+                        </a>
+                        <div class="caption"><h3>Passo 2</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/registrobr_step2.png" class="image">
+                            <img src="images/registrobr_step2_thumb.png" alt="Namecheap - Passo 2">
+                        </a>
+                        <div class="caption"><h3>Passo 3</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/registrobr_step3.png" class="image">
+                            <img src="images/registrobr_step3_thumb.png" alt="Namecheap - Passo 2">
+                        </a>
+                        <div class="caption"><h3>Passo 4</h3></div>
+                    </article>
+                </div>
+	    </div>
+        </section>
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://t.me/GabrielRF" class="icon style2 fa-paper-plane"><span class="label">Telegram</span></a></li>
+                    <li><a href="https://github.com/GabrielRF" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://twitter.com/GabRF" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/gabrielrochaferreira" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <p>&copy; Gabriel R F. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </div>
+        </footer>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
