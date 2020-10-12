@@ -44,7 +44,7 @@
                     <h4>A privacidade é um direito seu. Tenha controle sobre seus dados.</h4>
                     <p>O serviço MailShield é capaz de <b>esconder seu endereço de e-mail</b>, permitindo o uso de um endereço específico para cada loja, serviço ou local em que for necessário informar seu endereço eletrônico.</p>
                     <p>O serviço funciona recebendo todas as mensagens <i>@seudominio.com</i> e <b>encaminhando-as ao seu endereço de e-mail pessoal</b>, seja ele GMail, Hotmail ou qualquer outro. Tais mensagens serão marcadas, no campo de destinatário, com o texto que você escolheu, permitindo assim saber de antemão como aquela empresa ou pessoa obteve seu e-mail.</p>
-                    <p>Caso algum endereço <i>@semdominio.com</i> esteja recebendo muitas mensagens, basta bloquear o e-mail no bot, acabando com o problema.</p>
+                    <p>Caso algum endereço <i>@seudominio.com</i> esteja recebendo muitas mensagens, basta bloquear o e-mail no bot, acabando com o problema.</p>
                 </div>
             </section>
             <section class="spotlight style1 orient-right content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
@@ -71,7 +71,7 @@
                     <p>O registro de tipo MX é responsável por indicar o servidor que recebe os e-mails do domínio. A correta configuração é essencial para o funcionamento do serviço e do bot MailShield.</p>
                     <p><code>@ MX 10 mx.mailshield.xyz</code></p>
                     <ul>
-                        <li><code>@</code> indica ser a raíz do domínio. Em alguns sistemas o valor pode ser em branco.</li>
+                        <li><code>@</code> indica a raíz do domínio. Em alguns sistemas o valor pode ser em branco.</li>
                         <li><code>MX</code> tipo do registro.</li>
                         <li><code>10</code> prioridade do servidor.</li>
                         <li><code>mx.mailshield.xyz</code> é o servidor responsável pelos e-mails.</li>
@@ -88,7 +88,7 @@
                     <p>O registro de tipo TXT é útil para que o e-mail <b>não entre como SPAM</b> em sua caixa. Não é obrigatório, mas é recomendado.</p>
                     <p><code>@ TXT "v=spf1 include:mx.mailshield.xyz ~all"</code></p>
                     <ul>
-                        <li><code>@</code> indica ser a raíz do domínio. Em alguns sistemas o valor pode ser em branco.</li>
+                        <li><code>@</code> indica a raíz do domínio. Em alguns sistemas o valor pode ser em branco.</li>
                         <li><code>TXT</code> tipo do registro.</li>
                         <li><code>v=spf1 include:mx.mailshield.xyz ~all</code> texto do registro.</li>
                     </ul>
